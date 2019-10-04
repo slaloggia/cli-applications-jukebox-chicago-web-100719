@@ -43,17 +43,28 @@ end
 
 
 def run 
+  songs = [
+  "Phoenix - 1901",
+  "Tokyo Police Club - Wait Up",
+  "Sufjan Stevens - Too Much",
+  "The Naked and the Famous - Young Blood",
+  "(Far From) Home - Tiga",
+  "The Cults - Abducted",
+  "Phoenix - Consolation Prizes",
+  "Harry Chapin - Cats in the Cradle",
+  "Amos Lee - Keep It Loose, Keep It Tight"
+]
   puts "Please enter a command:"
   first_command = gets.strip
   case first_command
     when 'help'
-      puts help
+      help
     when 'list'
-      puts list(songs)
+      list(songs)
     when 'play'
-      puts play(songs)
+      play(songs)
     when 'exit'
-      puts exit_jukebox
+      exit_jukebox
   end
 end
 
