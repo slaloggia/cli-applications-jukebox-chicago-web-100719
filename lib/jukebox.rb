@@ -47,15 +47,15 @@ def run
   first_command = gets.strip
   case first_command
     when 'help'
-      help
+      puts help
     when 'list'
-      list(songs)
+      puts list(songs)
     when 'play'
-      play(songs)
+      puts play(songs)
     when 'exit'
-      exit_jukebox
+      puts exit_jukebox
   end
 end
 
-list(songs)
+run
 
