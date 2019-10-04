@@ -68,5 +68,4 @@ def run
   end
 end
 
-run
 
