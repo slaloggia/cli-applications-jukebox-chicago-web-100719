@@ -43,8 +43,7 @@ end
 
 
 def run(songs) 
-  puts "Please enter a command:"
-  user_command = gets.strip
+  user_command = nil
   until user_command == 'exit'
     puts "Please enter a command:"
     user_command = gets.strip
