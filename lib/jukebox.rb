@@ -43,10 +43,12 @@ end
 
 
 def run(songs) 
-  user_command = nil
+  def get_input
+    puts "Please enter a command:"
+    user_command = gets.strip
+  end
+  get_input
   until user_command == 'exit'
-  puts "Please enter a command:"
-  user_command = gets.strip
   case user_command
     when 'help'
       help
