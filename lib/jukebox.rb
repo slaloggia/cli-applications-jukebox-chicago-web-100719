@@ -43,6 +43,7 @@ end
 
 
 def run 
+  songs
   puts "Please enter a command:"
   first_command = gets.strip
   case first_command
